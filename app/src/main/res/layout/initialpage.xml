@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/frame_3"
+android:layout_width="360dp"
+android:layout_height="367dp"
+android:layout_alignParentLeft="true"
+android:layout_alignParentTop="true"
+android:layout_marginTop="433dp"
+android:background="@drawable/frame3"
+    />
+
+    <!-- drawable/frame_3.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="360dp"
+android:height="367dp"
+android:viewportWidth="360"
+android:viewportHeight="367"
+    >
+<group>
+    <clip-path
+        android:pathData="M50 0H310C337.614 0 360 22.3858 360 50V317C360 344.614 337.614 367 310 367H50C22.3858 367 0 344.614 0 317V50C0 22.3858 22.3858 0 50 0Z"
+        />
+    <path
+        android:pathData="M0 0V367H360V0"
+        android:fillColor="#253341"
+        />
+</group>
+</vector>
