@@ -3,6 +3,7 @@ package com.example.nft;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
@@ -47,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
                         circle2.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.black)));
                         circle3.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.white)));
                         flag=2;
+                    }
+                    else if(flag==2){
+                        Intent iNext= new Intent(MainActivity.this, Welcome2.class);
+                        startActivity(iNext);
                     }
                 }
             });
