@@ -34,8 +34,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:layout_width="300dp"
-                android:layout_height="61dp"
+                android:layout_width="330dp"
+                android:layout_height="59dp"
                 android:text="A credible and excellent marketplace for non-fungible token."
                 android:textColor="#aab8c2"
                 android:textSize="20sp"
