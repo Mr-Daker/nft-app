@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/mylogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/mylogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Nft"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".spalsh.Completion"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNFT.CompleteLsiting"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNFT.SetPrice"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNFT.setItems"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNFT.uploadItem"
+            android:exported="false" />
+        <activity
+            android:name=".activities.home"
+            android:exported="false" />
         <activity
             android:name=".spalsh.Splash2_welcomePage"
             android:exported="false" />
@@ -23,7 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".spalsh.Loading"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
