@@ -1,4 +1,4 @@
-package com.example.nft;
+package com.example.nft.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -11,7 +11,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.nft.R;
+
+public class Welcome1 extends AppCompatActivity {
     Button Next;
     ImageView imageView;
     ImageView circle1,circle2,circle3;
@@ -37,20 +39,20 @@ public class MainActivity extends AppCompatActivity {
                     if(flag==0){
                         imageView.setImageResource(R.drawable.initial_img2);
                         textView.setText("Start your own NFT gallery now");
-                        circle1.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.black)));
-                        circle2.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.white)));
+                        circle1.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(Welcome1.this, R.color.black)));
+                        circle2.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(Welcome1.this, R.color.white)));
                         //circle3.setColorFilter(getResources().getColor(R.color.circle3Color));
                         flag=1;
                     }
                     else if (flag==1) {
                         imageView.setImageResource(R.drawable.initial_img3);
                         textView.setText("Discovering the world of Crypto App");
-                        circle2.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.black)));
-                        circle3.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(MainActivity.this, R.color.white)));
+                        circle2.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(Welcome1.this, R.color.black)));
+                        circle3.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(Welcome1.this, R.color.white)));
                         flag=2;
                     }
                     else if(flag==2){
-                        Intent iNext= new Intent(MainActivity.this, Welcome2.class);
+                        Intent iNext= new Intent(Welcome1.this, Welcome2.class);
                         startActivity(iNext);
                     }
                 }

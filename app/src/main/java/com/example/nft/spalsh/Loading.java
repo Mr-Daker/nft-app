@@ -1,4 +1,4 @@
-package com.example.nft;
+package com.example.nft.spalsh;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,8 @@ import android.os.Looper;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.airbnb.lottie.LottieAnimationView;
+import com.example.nft.R;
+import com.example.nft.activities.Welcome1;
 import com.example.nft.shared.SharedPreferences;
 
 public class Loading extends AppCompatActivity {
@@ -23,7 +24,7 @@ public class Loading extends AppCompatActivity {
         //laView= findViewById(R.id.);
 
 
-        Intent intent= new Intent(Loading.this, MainActivity.class);
+        Intent intent= new Intent(Loading.this, Welcome1.class);
 
 
         SharedPreferences sp= new SharedPreferences();

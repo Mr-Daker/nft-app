@@ -1,8 +1,10 @@
-package com.example.nft;
+package com.example.nft.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.nft.R;
 
 public class Welcome2 extends AppCompatActivity {
 
