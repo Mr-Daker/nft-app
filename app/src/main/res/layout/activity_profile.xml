@@ -221,7 +221,7 @@
         android:backgroundTint="#2E90F3"
         android:text="Submit"
         android:textAllCaps="true"
-
+        android:id="@+id/setupSubmit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
