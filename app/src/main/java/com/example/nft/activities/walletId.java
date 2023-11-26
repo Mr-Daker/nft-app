@@ -1,4 +1,4 @@
-package com.example.nft.spalsh;
+package com.example.nft.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.nft.R;
 
-public class Splash2_welcomePage extends AppCompatActivity {
+public class walletId extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash2_welcome_page);
+        setContentView(R.layout.activity_wallet_id);
     }
 }

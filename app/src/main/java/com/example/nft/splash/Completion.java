@@ -1,4 +1,4 @@
-package com.example.nft.spalsh;
+package com.example.nft.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 

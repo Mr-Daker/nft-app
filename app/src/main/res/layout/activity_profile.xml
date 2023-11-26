@@ -132,13 +132,12 @@
                 android:id="@+id/Username"
                 android:layout_width="match_parent"
                 android:layout_height="34dp"
-
                 android:background="#253341"
                 android:hint="Kevin"
                 android:textColor="#fff"
                 android:textColorHint="#fff"
-                android:textSize="16dp"
-                android:layout_marginLeft="5dp"/>
+                android:textSize="18sp"
+                android:layout_marginStart="5dp"/>
 
 
         </LinearLayout>
@@ -162,7 +161,7 @@
                 android:text="Email Id"
                 android:textColor="#AAB8C2"
                 android:textSize="12sp"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginStart="5dp"/>
             <EditText
                 android:id="@+id/Email"
                 android:layout_width="match_parent"
@@ -171,8 +170,8 @@
                 android:hint="kevin@email.com"
                 android:textColor="#fff"
                 android:textColorHint="#fff"
-                android:textSize="16dp"
-                android:layout_marginLeft="5dp"/>
+                android:textSize="18sp"
+                android:layout_marginStart="5dp"/>
 
         </LinearLayout>
 
@@ -196,7 +195,7 @@
                 android:text="Bio"
                 android:textColor="#AAB8C2"
                 android:textSize="12sp"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginStart="5dp"/>
 
             <EditText
                 android:id="@+id/Bio"
@@ -209,7 +208,7 @@
                 android:background="#253341"
                 android:textColor="#fff"
                 android:textColorHint="#fff"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 

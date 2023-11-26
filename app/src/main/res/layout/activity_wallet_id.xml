@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/card_radius"
+    android:backgroundTint="#15202B"
+    tools:context=".activities.walletId">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center_vertical"
+        android:text="Enter ethereum address"
+
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/wallet_option"
+        android:backgroundTint="#fff"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <LinearLayout
+
+            android:layout_width="374dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="1.5dp"
+            android:background="@drawable/wallet_option"
+            android:backgroundTint="#253341"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="5dp"
+            android:background="#253341"
+            android:text="Address"
+            android:textColor="#AAB8C2"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"/>
+
+        <EditText
+            android:id="@+id/EthereumAddress"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="5dp"
+            android:background="#253341"
+            android:hint="0xb794f5ea0b"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/walletConfirm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#2E90F3"
+        android:text="Confirm"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
