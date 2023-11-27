@@ -34,7 +34,7 @@ public class profileSetup extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(profileSetup.this, walletId.class);
+                Intent intent = new Intent(profileSetup.this, Wallet.class);
                 startActivity(intent);
             }
         });
