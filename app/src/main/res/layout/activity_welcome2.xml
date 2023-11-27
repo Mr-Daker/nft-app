@@ -56,9 +56,9 @@
 
             <Button
 
-                android:id="@+id/button"
+                android:id="@+id/connectWallet"
                 android:layout_width="250dp"
-                android:layout_height="65dp"
+                android:layout_height="55dp"
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="#1D9BF0"
                 android:text="Connect with Wallet"
@@ -68,15 +68,17 @@
                 app:layout_constraintHorizontal_bias="0.161"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <ImageButton
+            <ImageView
+                android:id="@+id/skipToHome"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:src="@drawable/skip"
+                android:src="@drawable/next"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.514"
-                app:layout_constraintStart_toEndOf="@+id/button"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toEndOf="@+id/connectWallet"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.714" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     

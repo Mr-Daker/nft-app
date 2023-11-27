@@ -19,7 +19,7 @@
             android:name=".splash.Completion"
             android:exported="false" />
         <activity
-            android:name=".CreateNFT.CompleteLsiting"
+            android:name=".CreateNFT.CompleteListing"
             android:exported="false" />
         <activity
             android:name=".CreateNFT.SetPrice"
@@ -40,7 +40,7 @@
             android:name=".activities.Wallet"
             android:exported="false" />
         <activity
-            android:name=".activities.profile"
+            android:name=".activities.profileSetup"
             android:exported="false" />
         <activity
             android:name=".splash.Loading"

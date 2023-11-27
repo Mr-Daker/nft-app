@@ -4,6 +4,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateNFT.CompleteLsiting">
+    tools:context=".CreateNFT.CompleteListing"
+    android:background="#15202B">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="411dp"
+        android:layout_height="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006">
+
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.484"
+            />
+
+        <TextView
+            android:id="@+id/SetupProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Items"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.371"
+            app:layout_constraintStart_toEndOf="@+id/backButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Upload new items*"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="File types supported: JPG, PNG, Max size: 40 MB"
+            android:textColor="#AAB8C2"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/inputField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:src="@drawable/inputfield"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <EditText
+            android:id="@+id/nftName"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/wallet_option"
+            android:hint="Name"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nftExternalLink"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/wallet_option"
+            android:hint="External Link"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            app:layout_constraintEnd_toEndOf="@+id/nftName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nftName"
+            app:layout_constraintTop_toBottomOf="@+id/nftName" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="enefte will include a link to this URL on this itern's detail page, so that users can click to learn more about it. You are welcome to link to your own webpage with more details."
+            android:textColor="#AAB8C2"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/nftExternalLink"
+            app:layout_constraintStart_toStartOf="@+id/nftExternalLink"
+            app:layout_constraintTop_toBottomOf="@+id/nftExternalLink" />
+
+        <EditText
+            android:id="@+id/nftBio"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/wallet_option"
+            android:hint="Bio"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/walletContinue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E90F3"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
