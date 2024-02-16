@@ -4,6 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.home">
+    tools:context=".activities.home"
+    android:background="#15202B">
+    
+    
+    <FrameLayout
+        android:id="@+id/homeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        />
 
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#8DE4EF"
+        android:id="@+id/bottomNavigationHome"
+        app:menu="@menu/home_nav"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
